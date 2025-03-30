@@ -65,8 +65,8 @@ const page = () => {
   return (
     <>
       <Appbar />
-      <div className="h-screen lg:pb-30 bg-blue-50  dark:bg-gray-800   flex flex-wrap items-center  justify-center  ">
-        <div data-aos="fade-up" className="container lg:w-2/6 xl:w-2/7 sm:w-full md:w-2/3    bg-white  shadow-lg    transform   duration-200 easy-in-out">
+      <div className="lg:h-screen md:h-screen sm:h-screen lg:pb-30 bg-blue-50 dark:bg-gray-800   flex flex-wrap items-center  justify-center  ">
+        <div data-aos="fade-up" className="container lg:w-2/6 xl:w-2/7 sm:w-full md:w-2/3    bg-white      transform   duration-200 easy-in-out">
           <div className=" h-32 overflow-hidden" >
             <img className="w-full" src="https://images.unsplash.com/photo-1605379399642-870262d3d051?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80" alt="" />
           </div>
@@ -115,7 +115,7 @@ const page = () => {
             </div>
             <div data-aos="fade-up">
               <h1 className="pt-10 text-4xl font-semibold tracking-tight text-pretty text-gray-800 sm:text-5xl lg:text-balance text-center">Tech Stack</h1>
-              <div data-aos="fade-up" className="mx-auto pt-10 mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+              <div data-aos="fade-up" className="mx-auto pt-10 mt-10 grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
                 {techStack.map((tech, index) => (
                   <div key={index} className=" max-h-12 m-3 w-full flex flex-col items-center justify-center text-center">
                     <div className="text-4xl mb-2">{tech.icon}</div>
