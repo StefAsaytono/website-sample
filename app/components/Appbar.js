@@ -6,7 +6,6 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 const navigation = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
-    { name: 'Services', href: '/services' },
     { name: 'Contact Us', href: '/contactus' },
   ]
   
@@ -14,11 +13,11 @@ const navigation = [
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     return (
         <header className="absolute inset-x-0 top-0 z-50">
-        <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8 fixed w-full bg-white/30">
+        <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8 fixed w-full bg-black">
           <div className="flex lg:flex-1">
             <a href="/" className="-m-1.5 p-1.5">
-              <span className="sr-only">Company Name</span>
-              <img  className="h-8 w-auto" width="30" height="30" src="https://img.icons8.com/external-ios-line-2px-amoghdesign/30/112756/external-dark-multimedia-line-30px-ios-line-2px-amoghdesign.png" alt="external-dark-multimedia-line-30px-ios-line-2px-amoghdesign"/>
+              <span className="sr-only text-white">Portfolio</span>
+              <img width="30" height="30" src="/images/icons8-moon-50.png" alt="crescent-moon"/>
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -31,9 +30,9 @@ const navigation = [
               <Bars3Icon aria-hidden="true" className="size-6" />
             </button>
           </div>
-          <div className="hidden lg:flex lg:gap-x-12">
+          <div className="hidden lg:flex lg:gap-x-12 text-white">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-gray-900">
+              <a key={item.name} href={item.href} className="text-sm/6 font-semibold">
                 {item.name}
               </a>
             ))}
@@ -47,7 +46,7 @@ const navigation = [
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Company Name</span>
+                <span className="sr-only text-white">Portfolio</span>
                 <img
                   alt=""
                   src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
